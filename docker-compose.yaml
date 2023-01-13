@@ -1,15 +1,25 @@
 version: '3.8'
 services:
   frontend:
-    build:
-      context: ./frontend
-    container_name: Frontend
-    ports:
-      - 3000:3000
+    image: node:latest
+    command: npm start
+    working_dir: /app
+    volumes:
+      - ./ghi/frontend:/app
     environment:
-      - NODE_ENV= development
-    depends_on:
-      - database
+      - HOST=0.0.0.0
+      - PORT=3000
+      - NODE_ENV=development
+    ports:
+      - "3000:3000"
+    container_name: Frontend
+  web:
+    image: nginx
+    volumes:
+      - ./ghi:/usr/share/nginx/html:ro
+    ports:
+      - "3001:80"
+    container_name: Web
   database:
     image: postgres:14
     container_name: Database
@@ -23,4 +33,3 @@ services:
       - 15432:5432
 volumes:
   pgdata:
-  node_modules:
