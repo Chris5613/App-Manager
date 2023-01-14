@@ -98,3 +98,30 @@ body {
   margin-bottom: 10px;
   margin-left: 70px;
 }
+
+
+#day-input {
+  width: 158px
+}
+
+
+#footer-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 70px;
+}
+
+
+.nav-btn {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 34px;
+}

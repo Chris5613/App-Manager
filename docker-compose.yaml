@@ -13,13 +13,13 @@ services:
     ports:
       - "3000:3000"
     container_name: Frontend
-  web:
-    image: nginx
-    volumes:
-      - ./ghi:/usr/share/nginx/html:ro
-    ports:
-      - "3001:80"
-    container_name: Web
+  # web:
+  #   image: nginx
+  #   volumes:
+  #     - ./ghi:/usr/share/nginx/html:ro
+  #   ports:
+  #     - "3001:80"
+  #   container_name: Web
   database:
     image: postgres:14
     container_name: Database
