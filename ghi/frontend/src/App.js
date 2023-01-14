@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react" // add useEffect for APIs
 import Body from './components/Body'
 import Tasks from './components/Tasks'
 import AddTask from "./components/AddTask"

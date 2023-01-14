@@ -2,24 +2,21 @@ import Button from './Button'
 
 const Header = ({title, onAdd, showAddTask,}) => {
 
-    const onClick = (e) => {
-        console.log('click')
-    }
     // Write code for Edit Button
     return (
-    <main>
-        <h1 className ="title">{title}</h1>
+    <main className="center">
+        <h1 className ="title">{title} <i class="fa-solid fa-list-check"></i></h1>
         <h4 className ="title">Hello , User. Logout</h4>
         <Button
-        text={showAddTask ? 'Close' : 'Add'}
+        id="task-btn"
+        text={showAddTask ? 'Close' : 'Add Task'}
         onClick={onAdd}/>
-        <Button text="Edit" onClick={onClick}/>
     </main>
     )
 }
 
 Header.defaultProps = {
-    title: "To Do List",
+    title: "Task Buddy",
 }
 
 export default Header

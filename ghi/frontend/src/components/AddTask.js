@@ -7,11 +7,6 @@ const AddTask = ({onAdd}) => {
     const onSubmit = (e) => {
         e.preventDefault()
 
-        if(!text) {
-            alert("Task Created")
-            return
-        }
-
         onAdd({text, day})
 
         setText("")
@@ -40,7 +35,9 @@ const AddTask = ({onAdd}) => {
                 value={day}
                 onChange={(e) => setDay(e.target.value)}/>
             </div>
-            <input type="submit" value='Save Task' id="submit-btn" />
+            <div className='center'>
+                <input  type="submit" value='Save Task' id="submit-btn" />
+            </div>
         </form>
     )
 }
