@@ -1,5 +1,5 @@
-import Button from './Button'
-import LoginForm from './LoginForm'
+import Button from '../Button'
+import LoginForm from '../UserAuth/LoginForm'
 import { useState } from "react"
 
 
