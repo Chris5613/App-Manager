@@ -1,4 +1,4 @@
-import Button from '../Button'
+import Button from '../Buttons/Button'
 import SignupForm from '../UserAuth/SignupForm';
 import { useState } from "react"
 

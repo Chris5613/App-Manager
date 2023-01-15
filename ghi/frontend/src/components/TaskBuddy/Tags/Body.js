@@ -1,19 +1,11 @@
-import Button from '../Button'
-import Toggle from '../Toggle'
+import Button from '../Buttons/Button'
+
 
 const Body = ({title, onAdd, showAddTask,}) => {
 
-    const logState = state => {
-        console.log("Toggled:", state)
-    }
-
     return (
     <main className="center">
-        <h1 className ="title">{title} <i class="fa-solid fa-list-check"></i></h1>
-        <Toggle
-        toggled={true}
-        onClick={logState}
-        />
+        <h1 className ="title">{title} <i className="fa-solid fa-list-check"></i></h1>
         <div id="task-btn">
             <Button
             text={showAddTask ? 'Close' : 'Add Task'}

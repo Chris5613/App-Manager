@@ -2,6 +2,7 @@ import { useState } from "react"
 import Body from './components/TaskBuddy/Tags/Body'
 import Tasks from './components/TaskBuddy/Task/Tasks'
 import AddTask from "./components/TaskBuddy/Task/AddTask"
+import Toggle from "./components/TaskBuddy/Buttons/Toggle"
 
 
 function TaskBuddy() {
@@ -32,20 +33,32 @@ function TaskBuddy() {
   );
 }
 
+function SkyScope() {
+
+  return(
+    <p>hello</p>
+  )
+}
+
 function App() {
 
-  let content;
-  let number = 6
-  if(number === 0) {
-    content = <p>hello</p>
-  }
-  else {
+  const [toggle , setToggle] = useState(false)
+
+  let content
+  if(toggle === false) {
     content = <TaskBuddy />
+  }
+  else if(toggle === true) {
+    content = <SkyScope />
   }
 
   return (
       <>
         {content}
+        <Toggle onAdd={() =>
+          setToggle(toggle)}
+          toggle={toggle}
+          />
       </>
   );
 }

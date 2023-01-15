@@ -20,6 +20,6 @@ const div = ReactDOM.createRoot(document.getElementById('user'))
 div.render(
   <>
   <Nav />
-    <Footer />
+  <Footer />
   </>
 )
