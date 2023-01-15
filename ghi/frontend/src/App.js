@@ -1,11 +1,10 @@
-import { useState } from "react" // add useEffect for APIs
+import { useState } from "react"
 import Body from './components/TaskBuddy/Tags/Body'
 import Tasks from './components/TaskBuddy/Task/Tasks'
 import AddTask from "./components/TaskBuddy/Task/AddTask"
-// import Footer from './components/Tags/Footer'
 
 
-function App() {
+function TaskBuddy() {
   const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([])
 
@@ -19,6 +18,7 @@ function App() {
     setTasks(tasks.filter((task) => task.id !== id))
   }
 
+
   return (
       <>
       <Body onAdd={() => setShowAddTask(!showAddTask)}
@@ -26,8 +26,26 @@ function App() {
       {showAddTask && <AddTask onAdd={addTask}/>}
       <Tasks tasks={tasks} onDelete={deleteTask} />
       <footer>
-        <p id="footer-text"> <strong>Copyright © 2023 V1</strong></p>
+        <p id="footer-text"> <strong>Copyright © Chris 2023</strong></p>
       </footer>
+      </>
+  );
+}
+
+function App() {
+
+  let content;
+  let number = 6
+  if(number === 0) {
+    content = <p>hello</p>
+  }
+  else {
+    content = <TaskBuddy />
+  }
+
+  return (
+      <>
+        {content}
       </>
   );
 }

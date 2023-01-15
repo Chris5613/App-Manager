@@ -13,7 +13,7 @@ const Nav = () => {
 
   return (
     <nav className="navbar">
-        <ul id="nav-btn">
+        <ul>
           <Button onAdd={() =>
           setShowLoginForm(!showLoginForm)}
           showLoginForm={showLoginForm}

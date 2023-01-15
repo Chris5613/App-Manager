@@ -1,7 +1,7 @@
 import Button from '../Button'
-import Toggle from '../../Toggle'
+import Toggle from '../Toggle'
 
-const Header = ({title, onAdd, showAddTask,}) => {
+const Body = ({title, onAdd, showAddTask,}) => {
 
     const logState = state => {
         console.log("Toggled:", state)
@@ -23,8 +23,8 @@ const Header = ({title, onAdd, showAddTask,}) => {
     )
 }
 
-Header.defaultProps = {
+Body.defaultProps = {
     title: "Task Buddy",
 }
 
-export default Header
+export default Body
