@@ -3,6 +3,10 @@ import Body from './components/TaskBuddy/Tags/Body'
 import Tasks from './components/TaskBuddy/Task/Tasks'
 import AddTask from "./components/TaskBuddy/Task/AddTask"
 import Toggle from "./components/TaskBuddy/Buttons/Toggle"
+import Footer from "./components/TaskBuddy/Tags/Footer"
+import SkyBody from "./components/SkyScope/SkyBody"
+import clear from "./components/SkyScope/videos/clear.mp4"
+
 
 
 function TaskBuddy() {
@@ -35,14 +39,22 @@ function TaskBuddy() {
 
 function SkyScope() {
 
+
+
   return(
-    <p>hello</p>
+    <>
+    {/* <video autoPlay loop className="video">
+      <source src={clear} type="video/mp4"/>
+    </video> */}
+    <SkyBody />
+    <Footer />
+    </>
   )
 }
 
 function App() {
 
-  const [toggle , setToggle] = useState(false)
+  const [toggle , setToggle] = useState(true)
 
   let content
   if(toggle === false) {

@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/taskbuddy.css';
+import './css/skyscope.css';
 import App from './App';
-import Nav from './components/TaskBuddy/Tags/Nav'
-import Footer from './components/TaskBuddy/Tags/Footer'
+// import Nav from './components/TaskBuddy/Tags/Nav'
+// import Footer from './components/TaskBuddy/Tags/Footer'
 
 
 
@@ -16,10 +17,10 @@ root.render(
   </React.StrictMode>
 );
 
-const div = ReactDOM.createRoot(document.getElementById('user'))
-div.render(
-  <>
-  <Nav />
-  <Footer />
-  </>
-)
+// const div = ReactDOM.createRoot(document.getElementById('user'))
+// div.render(
+//   <>
+//   <Nav />
+//   <Footer />
+//   </>
+// )
