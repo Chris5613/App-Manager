@@ -55,10 +55,9 @@ function App() {
   return (
       <>
         {content}
-        <Toggle onAdd={() =>
-          setToggle(toggle)}
-          toggle={toggle}
-          />
+        <Toggle setToggle={setToggle}
+        toggle={toggle}
+        />
       </>
   );
 }
