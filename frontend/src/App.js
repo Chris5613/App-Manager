@@ -37,10 +37,8 @@ function TaskBuddy() {
   );
 }
 
+
 function SkyScope() {
-
-
-
   return(
     <>
     {/* <video autoPlay loop className="video">
@@ -51,6 +49,7 @@ function SkyScope() {
     </>
   )
 }
+
 
 function App() {
 

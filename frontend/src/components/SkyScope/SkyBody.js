@@ -20,47 +20,51 @@ const Body = () => {
     }
     return (
         <div className="skyapp">
-          <div className="search">
-            <input
-                id="cityinput"
-                value={location}
-                onChange={event => setLocation(event.target.value)}
-                onKeyDown={searchLocation}
-                placeholder='Enter a Location'
-                type="text" />
-          </div>
-          <div className="container">
-            <div className="top">
-              <div className="location">
-                <p>{data.name}</p>
-              </div>
-              <div className="temp">
-                {data.main ? <h1>{data.main.temp.toFixed()}°F</h1> : null}
-              </div>
-              <div className="description">
-                {data.weather ? <p>{data.weather[0].main}</p> : null}
-              </div>
+            <div className="search">
+              <input
+                  id="cityinput"
+                  value={location}
+                  onChange={event => setLocation(event.target.value)}
+                  onKeyDown={searchLocation}
+                  placeholder='Enter a Location'
+                  type="text" />
             </div>
-
+          <div className="container">
             {data.name !== undefined &&
-              <div className="bottom">
-                <div className="feels">
-                  {data.main ? <p className='bold'>{data.main.feels_like.toFixed()}°F</p> : null}
-                  <p>Feels Like</p>
-                </div>
-                <div className="humidity">
-                  {data.main ? <p className='bold'>{data.main.humidity}%</p> : null}
-                  <p>Humidity</p>
-                </div>
-                <div className="wind">
-                  {data.wind ? <p className='bold'>{data.wind.speed.toFixed()} MPH</p> : null}
-                  <p>Wind Speed</p>
-                </div>
+              <div className="top">
+              <div className="selectedWeather">
+                  <div className="weatherData">
+                      <div className="iconAndTemp">
+                          {/* <img src="" width="85" height="75" class="icon selected"/> */}
+                          {/* <i class="fa-regular fa-sun fa-2x"></i> */}
+                          <p className="city">{data.name}</p>
+                      </div>
+                      <div className="text">
+                          <p>Degrees:</p>
+                          <p>Currently: </p>
+                          <p>Feels like:</p>
+                          <p>Humidity:</p>
+                          <p>Wind Speed:</p>
+                      </div>
+                      <div className="variables">
+                          <p className="temp bold">{data.main ? <p>{data.main.temp.toFixed()}°F</p> : null}</p>
+                          <p className="current bold">{data.weather[0].main}</p>
+                          <p className="pop">{data.main ? <p className='bold'>{data.main.feels_like.toFixed()}°F</p> : null}</p>
+                          <p className="humidity bold">{data.main.humidity}%</p>
+                          <p className="wind">{data.wind ? <p className='bold'>{data.wind.speed.toFixed()} MPH</p> : null}</p>
+                      </div>
+                  </div>
+                  <div className="metaData">
+                      <p className="date">Date Here</p>
+                      <div className="time">
+                          <p className="time">Time Here</p>
+                      </div>
+                  </div>
               </div>
-            }
-          </div>
+</div>
+} </div>
         </div>
       );
-    }
+          }
 
 export default Body

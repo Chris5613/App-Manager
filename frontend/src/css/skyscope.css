@@ -3,7 +3,7 @@
 } */
 
 .container {
-    max-width: 400px;
+    /* max-width: 400px; */
     height: 400px;
     margin: auto;
     padding: 0 1rem;
@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 
@@ -23,18 +24,6 @@
 .descripton {
     position: relative;
     right: -90%;
-}
-
-
-.bottom {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    width: 100%;
-    margin: 1rem auto;
-    padding: 1rem;
-    border-radius: 12px;
-    background-color: rgba(82, 79, 79, 0.2);
 }
 
 
@@ -50,9 +39,94 @@
 
 
 #cityinput {
-    padding: .7rem 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    background: transparent;
+    border-radius: 30px;
+    width: 335px;
+    height: 52px;
+    padding-left: 10px;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+    color: black;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+
+.top {
+    background-color: rgba(225, 225, 225, 1);;
+    border-radius: 30px;
+    /*filter: drop-shadow(0 1px 1px black);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    transition: background-color 0.8s;;
+    width: 700px;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgba(82, 79, 79, 0.2);
+}
+
+
+.selectedWeather {
+    display: flex;
+    width: 84%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.iconAndTemp {
+    display: flex;
+    align-items: center;
+}
+
+
+.iconAndTemp p {
+    font-size: 30px;
+    margin-left: 16px;
+    font-weight: 600;
+}
+
+.weatherData .temp {
+    font-size: 36px;
+}
+
+.temp {
+    pointer-events: none;
+    margin: 0;
+}
+
+
+.text p,
+.variables p {
+font-size: 20px;
+}
+
+.text {
+    margin-right: 16px;
+    display: inline-block;
+}
+
+
+.variables {
+    display: inline-block;
 }

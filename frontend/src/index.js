@@ -4,8 +4,7 @@ import './css/taskbuddy.css';
 import './css/skyscope.css';
 import App from './App';
 // import Nav from './components/TaskBuddy/Tags/Nav'
-// import Footer from './components/TaskBuddy/Tags/Footer'
-
+// import SignupButton from './components/TaskBuddy/UserAuth/SignupBtn';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +20,6 @@ root.render(
 // div.render(
 //   <>
 //   <Nav />
-//   <Footer />
+//   <SignupButton />
 //   </>
 // )
