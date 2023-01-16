@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import clear from "./videos/clear.mp4"
 
 
 const Body = () => {

@@ -5,7 +5,7 @@ services:
     command: npm start
     working_dir: /app
     volumes:
-      - ./ghi/frontend:/app
+      - ./frontend:/app
     environment:
       - HOST=0.0.0.0
       - PORT=3000
