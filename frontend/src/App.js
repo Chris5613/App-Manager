@@ -25,7 +25,7 @@ function TaskBuddy() {
 
 
   return (
-      <>
+      <div className="taskapp">
       <Body onAdd={() => setShowAddTask(!showAddTask)}
       showAddTask={showAddTask}/>
       {showAddTask && <AddTask onAdd={addTask}/>}
@@ -33,12 +33,13 @@ function TaskBuddy() {
       <footer>
         <p id="footer-text"> <strong>Copyright © Chris 2023</strong></p>
       </footer>
-      </>
+      </div>
   );
 }
 
 
 function SkyScope() {
+
   return(
     <>
     {/* <video autoPlay loop className="video">
@@ -57,18 +58,21 @@ function App() {
 
   let content
   if(toggle === false) {
-    content = <TaskBuddy />
+      content = <TaskBuddy />
   }
   else if(toggle === true) {
-    content = <SkyScope />
+
+      content =
+      <div className="app">
+      <SkyScope />
+      </div>
   }
 
   return (
       <>
         {content}
         <Toggle setToggle={setToggle}
-        toggle={toggle}
-        />
+        toggle={toggle} />
       </>
   );
 }
