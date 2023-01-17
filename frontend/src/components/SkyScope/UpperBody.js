@@ -19,7 +19,7 @@ const UpperBody = ({data}) => {
                     <div className="iconAndTemp">
                         {/* <img src="" width="85" height="75" class="icon selected"/> */}
                         {/* <i class="fa-regular fa-sun fa-2x"></i> */}
-                        <Icons time={time} description={data.weather[0].main}/>
+                        <Icons description={data.weather[0].main}/>
                         <p className="temp bold">{data.main ? <p>  {data.main.temp.toFixed()}°F</p> : null}</p>
                     </div>
                     <div className="text">
