@@ -4,13 +4,11 @@ import { useState } from "react"
 
 
 const Nav = () => {
-
   const [showLoginForm, setShowLoginForm] = useState(false)
 
-    const onClick = (e) => {
-        setShowLoginForm(!showLoginForm)
-    }
-
+  const onClick = () => {
+    setShowLoginForm(!showLoginForm)
+  }
   return (
     <nav className="navbar">
         <ul>

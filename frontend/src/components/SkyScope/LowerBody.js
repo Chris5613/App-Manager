@@ -40,5 +40,4 @@ const LowerBody = ({time}) => {
             </div>
     )
 }
-
 export default LowerBody

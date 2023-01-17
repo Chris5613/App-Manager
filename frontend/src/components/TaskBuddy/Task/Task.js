@@ -1,5 +1,3 @@
-
-
 const Task = ({task, onDelete}) => {
     return (
         <div className="task">
@@ -9,5 +7,4 @@ const Task = ({task, onDelete}) => {
         </div>
     )
 }
-
 export default Task

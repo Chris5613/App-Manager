@@ -3,21 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './css/taskbuddy.css';
 import './css/skyscope.css';
 import App from './App';
-// import Nav from './components/TaskBuddy/Tags/Nav'
-// import SignupButton from './components/TaskBuddy/UserAuth/SignupBtn';
-
+import Nav from './components/TaskBuddy/Tags/Nav'
+import SignupButton from './components/TaskBuddy/UserAuth/SignupBtn';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+<React.StrictMode>
     <App />
-  </React.StrictMode>
+</React.StrictMode>
 );
 
-// const div = ReactDOM.createRoot(document.getElementById('user'))
-// div.render(
-//   <>
-//   <Nav />
-//   <SignupButton />
-//   </>
-// )
+const div = ReactDOM.createRoot(document.getElementById('contain'))
+div.render(
+<>
+<Nav />
+<SignupButton />
+</>
+)

@@ -7,13 +7,10 @@ const LoginForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     setUser("")
     setPass("")
 }
-
   return (
-
     <form className="forms" onSubmit={handleSubmit}>
             <div className="form-control">
                 <label>Username</label>
@@ -41,5 +38,4 @@ const LoginForm = () => {
         </form>
   )
 }
-
 export default LoginForm

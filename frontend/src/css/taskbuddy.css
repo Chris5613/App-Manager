@@ -1,10 +1,8 @@
 * {
   box-sizing: border-box;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   color: black;
-
 }
-
 
 body {
   display: flex;
@@ -13,7 +11,6 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-
 }
 
 .taskapp {
@@ -34,14 +31,10 @@ body {
   box-shadow: 20px 20px 20px 5px black;
 }
 
-
-
 .app-h1 {
   text-align: center;
   font-size: 40px;
-
 }
-
 
 .btn {
   font-size: 17px;
@@ -52,12 +45,10 @@ body {
   margin-top: 25px;
 }
 
-
 .title {
   color: black;
   text-align: center;
 }
-
 
 .task {
   background-color: lightgray;
@@ -66,23 +57,19 @@ body {
   cursor: pointer;
 }
 
-
 .task h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-
 .delete {
   color: red;
 }
 
-
 #center-text {
   text-align: center;
 }
-
 
 .form-control {
   margin-top: 20px;
@@ -91,15 +78,13 @@ body {
   align-items: center;
   justify-content: center;
   width: auto;
-
 }
-
 
 .create-form {
   margin-left: 25px;
 }
 
-.form-control label{
+.form-control label {
   margin-right: 15px;
 }
 
@@ -112,11 +97,9 @@ body {
   margin-left: 15px;
 }
 
-
 #day-input {
-  width: 158px
+  width: 158px;
 }
-
 
 #footer-text {
   text-align: center;
@@ -125,18 +108,15 @@ body {
   margin-left: 10px;
 }
 
-
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .center {
   text-align: center;
 }
-
 
 #task-btn {
   margin-left: 5px;
@@ -145,7 +125,6 @@ body {
 ul {
   margin-right: 35px;
 }
-
 
 .label {
   position: relative;
@@ -203,7 +182,6 @@ ul {
   transform: translateX(29px);
 }
 
-
-.forms  {
+.forms {
   margin-right: 25px;
 }

@@ -4,15 +4,12 @@ const AddTask = ({onAdd}) => {
     const [text,setText] = useState('')
     const [day,setDay] = useState('')
 
-    const onSubmit = (e) => {
-        e.preventDefault()
-
+    const onSubmit = (event) => {
+        event.preventDefault()
         onAdd({text, day})
-
         setText("")
         setDay("")
     }
-
     return (
         <form action="post" className="create-form" onSubmit={onSubmit}>
             <div className="form-control form-control-check">
@@ -22,7 +19,7 @@ const AddTask = ({onAdd}) => {
                 type="text"
                 placeholder="Add Task"
                 value={text}
-                onChange={(e) => setText(e.target.value)}
+                onChange={(event) => setText(event.target.value)}
                 />
             </div>
             <div className="form-control">
@@ -33,7 +30,7 @@ const AddTask = ({onAdd}) => {
                 type="date"
                 placeholder="Add Due Date"
                 value={day}
-                onChange={(e) => setDay(e.target.value)}/>
+                onChange={(event) => setDay(event.target.value)}/>
             </div>
             <div className='center'>
                 <input  type="submit" value='Save Task' id="submit-btn" />
@@ -41,5 +38,4 @@ const AddTask = ({onAdd}) => {
         </form>
     )
 }
-
 export default AddTask

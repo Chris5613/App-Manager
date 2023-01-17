@@ -1,7 +1,6 @@
 import Task from './Task'
 
 const Tasks = ({tasks, onDelete}) => {
-
     return (
         <>
             {tasks.map((task, index) => (
@@ -12,5 +11,4 @@ const Tasks = ({tasks, onDelete}) => {
         </>
     )
 }
-
 export default Tasks
