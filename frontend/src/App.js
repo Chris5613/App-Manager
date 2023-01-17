@@ -5,7 +5,7 @@ import AddTask from "./components/TaskBuddy/Task/AddTask"
 import Toggle from "./components/TaskBuddy/Buttons/Toggle"
 import Footer from "./components/TaskBuddy/Tags/Footer"
 import SkyBody from "./components/SkyScope/SkyBody"
-import clear from "./components/SkyScope/videos/clear.mp4"
+// import clear from "./components/SkyScope/videos/clear.mp4"
 
 
 
