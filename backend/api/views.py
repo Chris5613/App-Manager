@@ -1,5 +1,5 @@
 from .models import Task
-from .serializers import TaskSerializer
+from .serializers import TaskSerializers
 from django.http import JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -12,10 +12,10 @@ def task_list(request):
 
     if request.method == 'GET':
         tasks = Task.objects.all()
-        serializer = TaskSerializer(tasks, many=True)
+        serializer = TaskSerializers(tasks, many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
-        serializer = TaskSerializer(data=request.data)
+        serializer = TaskSerializers(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -32,7 +32,7 @@ def task_details(request,id):
 
 
     if request.method == "GET":
-        serializer = TaskSerializer(tasks)
+        serializer = TaskSerializers(tasks)
         return Response(serializer.data)
     elif request.method == "DELETE":
         tasks.delete()
