@@ -1,4 +1,4 @@
-import Icons from "./Icons";
+import Icons from "../Icons";
 import LowerBody from './LowerBody';
 
 
@@ -12,7 +12,7 @@ const UpperBody = ({data}) => {
         {data.name !== undefined &&
         <div className="top">
             <div className="selectedWeather">
-                <div className="weatherData">
+                <div>
                     <div className="iconAndTemp">
                         <Icons description={data.weather[0].main}/>
                         <p className="temp bold">{data.main ?
@@ -26,20 +26,20 @@ const UpperBody = ({data}) => {
                         <p>Wind Speed:</p>
                     </div>
                     <div className="variables">
-                        <p className="current bold">{data.weather[0].main}</p>
-                        <p className="pop">{data.main ?
+                        <p className="bold">{data.weather[0].main}</p>
+                        <p>{data.main ?
                         <p className='bold'>{data.main.feels_like.toFixed()}°F</p>
                         : null}</p>
-                        <p className="humidity bold">{data.main.humidity}%</p>
-                        <p className="wind">{data.wind ?
+                        <p className="bold">{data.main.humidity}%</p>
+                        <p>{data.wind ?
                         <p className='bold'>{data.wind.speed.toFixed()} MPH <i className="fa-solid fa-wind"></i></p>
                         : null}</p>
                     </div>
                 </div>
                 <div className="metaData">
-                    <p className="date">{date}</p>
+                    <p>{date}</p>
                     <div className="time">
-                        <p className="city">{data.name}</p>
+                        <p>{data.name}</p>
                         <p className="time">{time}</p>
                     </div>
                 </div>

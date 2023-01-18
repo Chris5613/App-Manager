@@ -11,7 +11,7 @@ const AddTask = ({onAdd}) => {
         setDay("")
     }
     return (
-        <form action="post" className="create-form" onSubmit={onSubmit}>
+        <form onSubmit={onSubmit}>
             <div className="form-control form-control-check">
                 <label>Task</label>
                 <input

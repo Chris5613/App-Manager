@@ -12,7 +12,7 @@ const SignupForm = () => {
 };
 
 return (
-    <form className="forms" nSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
         <div className="form-control">
             <label>Username</label>
             <input
