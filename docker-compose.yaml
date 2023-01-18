@@ -22,16 +22,13 @@ services:
     ports:
       - "8000:8000"
     container_name: Backend
-#   database:
-#     image: postgres:14
-#     container_name: Database
-#     volumes:
-#       - pgdata:/var/lib/postgresql/data
-#       - ./database/setup:/docker-entrypoint-initdb.d
-#     environment:
-#       - POSTGRES_MULTIPLE_DATABASES=frontend
-#       - POSTGRES_PASSWORD=test-databases
-#     ports:
-#       - 15432:5432
-# volumes:
-#   pgdata:
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+    container_name: Database
+
+volumes:
+  postgres_data:

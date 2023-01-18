@@ -12,7 +12,7 @@ const AddTask = ({onAdd}) => {
     }
     return (
         <form onSubmit={onSubmit}>
-            <div className="form-control form-control-check">
+            <div className="form-control" >
                 <label>Task</label>
                 <input
                 required
