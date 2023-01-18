@@ -13,13 +13,15 @@ services:
     ports:
       - "3000:3000"
     container_name: Frontend
-  # web:
-  #   image: nginx
-  #   volumes:
-  #     - ./ghi:/usr/share/nginx/html:ro
-  #   ports:
-  #     - "3001:80"
-  #   container_name: Web
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    container_name: Backend
 #   database:
 #     image: postgres:14
 #     container_name: Database
