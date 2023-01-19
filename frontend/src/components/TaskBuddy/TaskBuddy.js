@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AddTask from "../TaskBuddy/Task/AddTask";
-import Tasks from "../TaskBuddy/Task/Tasks";
+import GetTask from "../TaskBuddy/Task/GetTask";
 import Body from '../TaskBuddy/Tags/Body'
 import Footer from "./Tags/Footer";
 
@@ -15,7 +15,7 @@ function TaskBuddy() {
             showAddTask={showAddTask}
         />
         {showAddTask && <AddTask o />}
-        <Tasks />
+        <GetTask />
         <Footer />
         </div>
     );

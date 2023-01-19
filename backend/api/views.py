@@ -36,4 +36,4 @@ def task_details(request,id):
         return Response(serializer.data)
     elif request.method == "DELETE":
         tasks.delete()
-        return JsonResponse(status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_200_OK)
