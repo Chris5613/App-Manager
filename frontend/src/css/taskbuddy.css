@@ -34,6 +34,7 @@ body {
   margin: 10px;
   padding: 1px 20px;
   cursor: pointer;
+  border: 3px solid black;
 }
 
 .task h3 {
@@ -44,6 +45,8 @@ body {
 
 .delete {
   color: red;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .form-control {
@@ -124,4 +127,9 @@ ul {
 
 .input:checked + .span:before {
   transform: translateX(29px);
+}
+
+
+.task p  {
+  margin-top: -25px;
 }

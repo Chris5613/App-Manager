@@ -7,12 +7,6 @@ import Footer from "./Tags/Footer";
 
 function TaskBuddy() {
     const [showAddTask, setShowAddTask] = useState(false);
-    const [tasks, setTasks] = useState([]);
-
-
-    const deleteTask = async (id) => {
-        setTasks(tasks.filter((task) => task.id !== id));
-    };
 
     return (
         <div className="taskapp">
@@ -21,7 +15,7 @@ function TaskBuddy() {
             showAddTask={showAddTask}
         />
         {showAddTask && <AddTask o />}
-        <Tasks tasks={tasks} onDelete={deleteTask} />
+        <Tasks />
         <Footer />
         </div>
     );
