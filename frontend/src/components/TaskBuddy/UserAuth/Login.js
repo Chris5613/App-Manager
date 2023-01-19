@@ -1,5 +1,5 @@
 import Button from '../Buttons/Button'
-import LoginForm from '../UserAuth/LoginForm'
+import Form from './Form'
 import { useState } from "react"
 
 
@@ -18,7 +18,7 @@ const Nav = () => {
           onClick ={onClick}
           text={showLoginForm ? 'Close' : 'User Login'}/>
           {showLoginForm &&
-          <LoginForm />
+          <Form />
           }
         </ul>
     </nav>

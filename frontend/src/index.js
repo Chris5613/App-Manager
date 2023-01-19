@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './css/taskbuddy.css';
 import './css/skyscope.css';
 import App from './App';
-import Nav from './components/TaskBuddy/Tags/Nav'
-import SignupButton from './components/TaskBuddy/UserAuth/SignupBtn';
+import Login from './components/TaskBuddy/UserAuth/Login';
+import Signup from './components/TaskBuddy/UserAuth/Signup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +16,7 @@ root.render(
 const div = ReactDOM.createRoot(document.getElementById('contain'))
 div.render(
 <>
-<Nav />
-<SignupButton />
+<Login />
+<Signup />
 </>
 )

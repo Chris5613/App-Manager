@@ -1,5 +1,5 @@
 import Button from '../Buttons/Button'
-import SignupForm from '../UserAuth/SignupForm';
+import Form from './Form';
 import { useState } from "react"
 
 
@@ -18,7 +18,7 @@ const SignupButton = () => {
       onClick={onClick}
       className ="btn"
       text={showSignupForm ? 'Close' : "User Signup"}/>
-      {showSignupForm && <SignupForm />}
+      {showSignupForm && <Form />}
     </div>
   )
 }
