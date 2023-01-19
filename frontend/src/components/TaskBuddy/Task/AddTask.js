@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 
 const AddTask = ({onAdd}) => {
-    const [name,setTask] = useState('')
+    const [task,setTask] = useState('')
     const [due_date,setDue_date] = useState('')
 
     const handleTaskChange = (event) => {
@@ -23,7 +23,7 @@ const AddTask = ({onAdd}) => {
                 throw new Error('The input date cannot be before the current date.');
             }
             const data = {}
-            data.name = name;
+            data.name = task;
             data.due_date = due_date;
 
             const taskUrl = 'http://localhost:8000/api/tasks/'
@@ -55,7 +55,7 @@ const AddTask = ({onAdd}) => {
                 required
                 type="text"
                 placeholder="Add Task"
-                value={name}
+                value={task}
                 onChange={handleTaskChange}
                 />
             </div>
