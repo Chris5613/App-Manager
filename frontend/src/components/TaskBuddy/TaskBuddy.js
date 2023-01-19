@@ -9,21 +9,18 @@ function TaskBuddy() {
     const [showAddTask, setShowAddTask] = useState(false);
     const [tasks, setTasks] = useState([]);
 
-    const addTask = async (task) => {
-        const id = Math.floor(Math.random() * 10000) + 1;
-        const newTask = { id, ...task };
-        setTasks([...tasks, newTask]);
-    };
+
     const deleteTask = async (id) => {
         setTasks(tasks.filter((task) => task.id !== id));
     };
+
     return (
         <div className="taskapp">
         <Body
             onAdd={() => setShowAddTask(!showAddTask)}
             showAddTask={showAddTask}
         />
-        {showAddTask && <AddTask onAdd={addTask} />}
+        {showAddTask && <AddTask o />}
         <Tasks tasks={tasks} onDelete={deleteTask} />
         <Footer />
         </div>
