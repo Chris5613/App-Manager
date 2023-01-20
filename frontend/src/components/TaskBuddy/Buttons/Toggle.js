@@ -1,9 +1,20 @@
-const Toggle = ({ label, toggle, setToggle}) => {
+
+
+
+
+const Toggle = ({ toggle, setToggle}) => {
+
+    function onToggle() {
+        document.body.style.backgroundImage ='none'
+        setToggle(!toggle)
+    }
+
+
+
     return (
         <label className='label'>
-            <input className='input' type="checkbox" defaultChecked={false} onClick={() => setToggle(!toggle)} />
+            <input className='input' type="checkbox" defaultChecked={false} onClick={() => onToggle()} />
             <span className='span'></span>
-            <strong className='strong'>{label}</strong>
         </label>
     )
 }
