@@ -13,10 +13,10 @@ root.render(
 </React.StrictMode>
 );
 
-const div = ReactDOM.createRoot(document.getElementById('contain'))
-div.render(
-<>
-<Login />
-<Signup />
-</>
-)
+// const div = ReactDOM.createRoot(document.getElementById('contain'))
+// div.render(
+// <>
+// <Login />
+// <Signup />
+// </>
+// )
