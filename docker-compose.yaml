@@ -21,6 +21,8 @@ services:
       - ./backend:/app
     ports:
       - "8000:8000"
+    depends_on:
+      - db
     container_name: Backend
   db:
     image: postgres:13
