@@ -1,6 +1,4 @@
 import Icons from "../Icons";
-import LowerBody from './LowerBody';
-
 
 const today = new Date();
 const day = today.toLocaleDateString('en', { weekday: 'long' });
@@ -44,7 +42,13 @@ const UpperBody = ({data}) => {
                     </div>
                 </div>
             </div>
-            <LowerBody time={time}/>
+            <div className="hourSection">
+                <div className="hourlydata">
+                    <p className="time">01:00</p>
+                    <i className="fa-solid fa-cloud fa-4x"></i>
+                    <p className="temp">16°C</p>
+                </div>
+            </div>
         </div>
         }
     </div>

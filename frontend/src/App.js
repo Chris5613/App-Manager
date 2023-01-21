@@ -5,7 +5,7 @@ import Toggle from "./components/TaskBuddy/Buttons/Toggle";
 
 
 function App() {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   let content;
   if (toggle === false) {
