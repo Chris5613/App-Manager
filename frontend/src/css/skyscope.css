@@ -73,15 +73,10 @@
     padding: 0;
 }
 
-
-.text {
-    margin-right: 16px;
+.text, .variables {
     display: inline-block;
-}
-
-
-.variables {
-    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 
@@ -102,9 +97,6 @@
     transition: transform 0.3s, left 0.25s;
 }
 
-.hourData:hover {
-    transform: translateY(-10%);
-}
 
 .time {
     justify-content: end;
