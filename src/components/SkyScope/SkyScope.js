@@ -1,12 +1,9 @@
-import SkyBody from './Body/SkyBody'
-import Footer from '../TaskBuddy/Tags/Footer';
-
+import SkyBody from './Body/SkyBody';
 
 function SkyScope() {
     return (
         <>
             <SkyBody />
-            <Footer />
         </>
     );
 }

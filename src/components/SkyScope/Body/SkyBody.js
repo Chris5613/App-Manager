@@ -16,19 +16,6 @@ const Body = () => {
         }
     }
 
-    // const lat = data.lat
-    // const lon = data.lon
-    // const hourlyData = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid={895284fb2d2c50a520ea537456963d9c}`
-
-    // const handleSubmit = async (event) => {
-    //     const response = await fetch(hourlyData)
-    //     if(response.ok) {
-    //         const weatherData = await response.json()
-    //         console.log(weatherData)
-    //         }
-    //         handleSubmit()
-    //     }
-
     return (
         <>
         <div className="skyapp">

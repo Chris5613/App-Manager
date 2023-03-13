@@ -42,13 +42,6 @@ const UpperBody = ({data}) => {
                     </div>
                 </div>
             </div>
-            <div className="hourSection">
-                <div className="hourlydata">
-                    <p className="time">01:00</p>
-                    <i className="fa-solid fa-cloud fa-4x"></i>
-                    <p className="temp">16°C</p>
-                </div>
-            </div>
         </div>
         }
     </div>
