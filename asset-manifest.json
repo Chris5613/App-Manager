@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.0cd34e53.css",
-    "main.js": "/static/js/main.b019cf56.js",
-    "index.html": "/index.html",
-    "main.0cd34e53.css.map": "/static/css/main.0cd34e53.css.map",
-    "main.b019cf56.js.map": "/static/js/main.b019cf56.js.map"
+    "main.css": "/Weather-Tracker/static/css/main.0cd34e53.css",
+    "main.js": "/Weather-Tracker/static/js/main.b019cf56.js",
+    "index.html": "/Weather-Tracker/index.html",
+    "main.0cd34e53.css.map": "/Weather-Tracker/static/css/main.0cd34e53.css.map",
+    "main.b019cf56.js.map": "/Weather-Tracker/static/js/main.b019cf56.js.map"
   },
   "entrypoints": [
     "static/css/main.0cd34e53.css",
