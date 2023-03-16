@@ -1,3 +1,7 @@
+# Site is live
+
+https://www.christianwu.dev/Weather-Tracker/
+
 
 ## Table of Contents
 * [Technologies Used](#technologies-used)
